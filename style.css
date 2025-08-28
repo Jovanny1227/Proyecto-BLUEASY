@@ -1,6 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .fondo1 {
@@ -70,12 +71,13 @@ h1 {
     background-color: rgb(67, 78, 85, 0.87);
     padding: 0 1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
 }
 
 .container2 {
     display: grid;
     width: auto;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: 1fr repeat(4, 1fr) 1fr;
     grid-template-rows: 0.5fr 1fr;
     justify-content: center;
     background-color: rgb(75, 202, 255);
@@ -84,25 +86,25 @@ h1 {
 }
 
 .caja1 {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 2/3;
     height: 25vh;
 }
 
 .caja2 {
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 2/3;
     height: 25vh;
 }
 
 .caja3 {
-    grid-column: 5/6;
+    grid-column: 4/5;
     grid-row: 2/3;
     height: 25vh;
 }
 
 .caja4 {
-    grid-column: 6/7;
+    grid-column: 5/6;
     grid-row: 2/3;
     height: 25vh;
 }
@@ -130,7 +132,12 @@ h1 {
     justify-content: space-between;
     grid-column: 2/6;
     align-items: center;
+    font-weight: 100;
+}
 
+.vin {
+    display: flex;
+    gap: 30px;
 }
 
 .seleccionado2 {
@@ -254,7 +261,7 @@ h1 {
 .imgagenV {
     background-image: url(img/VimeoVideo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     grid-column: 4/5;
     grid-row: 2/3;
@@ -289,7 +296,7 @@ h1 {
 .container5 {
     display: grid;
     width: auto;
-    height: 19vh;
+    height: 39vh;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
     background-color: rgb(75, 202, 255);
@@ -329,7 +336,7 @@ h1 {
 
 .container6 {
     display: grid;
-    height: 45vh;
+    height: 53vh;
     width: auto;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 3fr repeat(3, 2fr);
@@ -338,12 +345,14 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    font-weight: 100;
 }
 
 .cajon1 {
     grid-column: 2/3;
     place-content: end;
     font-size: 1.2rem;
+    font-weight: 100;
 }
 
 .cajon2 {
@@ -392,15 +401,222 @@ li {
 }
 
 .container7 {
-    display: flex;
+    display: grid;
     width: auto;
-    flex-direction: column;
-    place-items: center;
-    height: 21vh;
+    height: 39vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: rgb(105, 116, 123);
+    font-weight: 100;
 }
 
 .comillas {
     display: flex;
     justify-content: space-between;
-    width: 55%;
+    align-items: end;
+    grid-column: 2 / 3;
+}
+
+.lineaB4 {
+    background-color: rgb(105, 116, 123);
+    height: 3px;
+    width: 30%;
+    margin-bottom: 17px;
+}
+
+.textoC p {
+    font-size: 1.7rem;
+}
+
+.textoC {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    grid-column: 2 / 3;
+
+}
+
+.textoC li {
+    color: rgb(75, 202, 255);
+}
+
+.comillassolas {
+    font-size: 2rem;
+}
+
+.comillas img {
+    zoom: 1;
+}
+
+.container8 {
+    display: grid;
+    width: auto;
+    height: 86vh;
+    grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+    grid-template-rows: repeat(5, 2fr);
+    color: white;
+    background-image: url(img/bg_contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tituloF {
+    grid-column: 2/3;
+    align-content: center;
+}
+
+.fullName {
+    grid-column: 2/3;
+}
+
+.fullName input {
+    width: 32rem;
+    height: 3rem;
+    background-color: transparent;
+    border: solid white 2px;
+    color: white;
+}
+
+.Email {
+    grid-column: 2/3;
+    margin-right: 64px;
+}
+
+.Email input {
+    width: 32rem;
+    height: 3rem;
+    background-color: transparent;
+    border: solid white 2px;
+    color: white;
+}
+
+.textoF {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.mensage {
+    grid-column: 2/4;
+}
+
+.boton {
+    grid-column: 2/3;
+}
+
+button {
+    cursor: pointer;
+}
+
+.boton button {
+    width: 23rem;
+    height: 3rem;
+    background-color: rgb(75, 202, 255);
+    border: none;
+    color: white;
+    margin-top: 30px;
+
+}
+
+.lineaB5 {
+    background-color: white;
+    height: 3px;
+    width: 8%;
+    margin-bottom: 17px;
+}
+
+textarea {
+    background-color: transparent;
+    border: solid white 2px;
+    color: white;
+    width: -webkit-fill-available;
+}
+
+.tituloF h2 {
+    font-weight: 100;
+}
+
+.container8 h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 39rem;
+    height: 14vh;
+    background-color: rgb(53, 63, 71);
+    font-size: 1rem;
+    color: rgb(72, 85, 93);
+    font-weight: 300;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1279px) {
+    .textoCentro h2 {
+        font-size: 1.7rem;
+    }
+
+    .container2 {
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+    }
+
+    .container2 p {
+        width: 13rem;
+    }
+
+    .container3 {
+        grid-template-columns: 0.5fr repeat(4, 1fr) 0.1fr;
+    }
+
+    .cajon2 p {
+        width: 28rem;
+    }
+
+    .cajon4 p {
+        width: 17rem;
+    }
+
+    .cajon3 p {
+        width: 25rem;
+    }
+
+    .parrafo1 {
+        width: 25.7rem;
+        font-size: 0.8rem;
+    }
+
+    .parrafo2 {
+        width: 23.6rem;
+        font-size: 0.8rem;
+    }
+
+    .container4 {
+        gap: 6px;
+        grid-template-columns: 0.1fr 0.2fr auto 12fr 0.5fr;
+    }
+
+    .textos {
+        justify-content: end;
+    }
+
+    .visit {
+        width: 31%;
+        height: 4vh;
+    }
+
+    .imgagenV {
+        background-size: contain;
+    }
+
+    .container8 {
+        grid-template-columns: 1fr repeat(2, 11fr) 1fr;
+    }
+    
+    footer {
+        gap: 18rem;
+    }
 }
